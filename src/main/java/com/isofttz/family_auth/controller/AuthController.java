@@ -1,11 +1,10 @@
-package com.isofttz.family.auth.family_auth.controller;
+package com.isofttz.family_auth.controller;
 
-import com.isofttz.family.auth.family_auth.entities.Users;
-import com.isofttz.family.auth.family_auth.model.AuthResponseModel;
-import com.isofttz.family.auth.family_auth.model.ResponseModel;
-import com.isofttz.family.auth.family_auth.security.JwtTokenProvider;
-import com.isofttz.family.auth.family_auth.services.UserServices;
-import jakarta.servlet.http.HttpServletRequest;
+import com.isofttz.family_auth.entities.Users;
+import com.isofttz.family_auth.model.AuthResponseModel;
+import com.isofttz.family_auth.model.ResponseModel;
+import com.isofttz.family_auth.security.JwtTokenProvider;
+import com.isofttz.family_auth.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -23,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/family-auth/api/auth")
 public class AuthController {
 
     @Value("${app.jwt-expiration-milliseconds}")
@@ -40,6 +39,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<AuthResponseModel> login(@RequestBody Users user){
+        System.out.print("-------------login start here-------------------");
         final AuthResponseModel authResponseModel;
 
 
@@ -53,6 +53,8 @@ public class AuthController {
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String token =jwtTokenProvider.generateToken(authentication);
+
+        System.out.print("-------------path start here-------------------");
 
 
         if (optionalUser.isPresent()) {

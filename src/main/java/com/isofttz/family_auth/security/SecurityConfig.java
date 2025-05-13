@@ -1,7 +1,6 @@
-package com.isofttz.family.auth.family_auth.security;
+package com.isofttz.family_auth.security;
 
-
-import com.isofttz.family.auth.family_auth.services.CustomUserDetailsService;
+import com.isofttz.family_auth.services.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -39,24 +38,15 @@ public class SecurityConfig {
                 authorizeHttpRequests((authReq)->authReq
                         .requestMatchers(HttpMethod.GET)
                         .permitAll()
-                        .requestMatchers("/api/auth/**")
+                        .requestMatchers("/family-auth/api/auth/**")
                         .permitAll()
-                        .requestMatchers("/api/bills/**").authenticated()
-                        .requestMatchers("/api/budget/**").authenticated()
-                        .requestMatchers("/api/budget/**").authenticated()
-                        .requestMatchers("/api/category/**").authenticated()
-                        .requestMatchers("/api/income/**").authenticated()
-                        .requestMatchers("/api/transactions/**").authenticated()
-                        .requestMatchers("/api/expense/**").authenticated()
-
-
-//                        .requestMatchers(HttpMethod.POST,
-//                                "/api/bills/add","/api/bills/getBills")
-//                        .authenticated()
-//                        .requestMatchers(HttpMethod.POST,
-//                                "/api/reservation/add")
-//                        .permitAll()
-
+//                        .requestMatchers("/api/bills/**").authenticated()
+//                        .requestMatchers("/api/budget/**").authenticated()
+//                        .requestMatchers("/api/budget/**").authenticated()
+//                        .requestMatchers("/api/category/**").authenticated()
+//                        .requestMatchers("/api/income/**").authenticated()
+//                        .requestMatchers("/api/transactions/**").authenticated()
+//                        .requestMatchers("/api/expense/**").authenticated()
                 )
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(jwtEntryPoint))
                 .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

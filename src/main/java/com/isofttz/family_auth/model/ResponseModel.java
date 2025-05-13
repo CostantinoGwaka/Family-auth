@@ -1,4 +1,4 @@
-package com.isofttz.family.auth.family_auth.model;
+package com.isofttz.family_auth.model;
 
 
 import lombok.AllArgsConstructor;

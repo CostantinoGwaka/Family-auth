@@ -1,6 +1,6 @@
-package com.isofttz.family.auth.family_auth.model;
+package com.isofttz.family_auth.model;
 
-import com.isofttz.family.auth.family_auth.entities.Users;
+import com.isofttz.family_auth.entities.Users;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

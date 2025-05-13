@@ -1,8 +1,8 @@
-package com.isofttz.family.auth.family_auth.servicesImpl;
+package com.isofttz.family_auth.servicesImpl;
 
-import com.isofttz.family.auth.family_auth.entities.Users;
-import com.isofttz.family.auth.family_auth.repository.AppUserRepository;
-import com.isofttz.family.auth.family_auth.services.UserServices;
+import com.isofttz.family_auth.entities.Users;
+import com.isofttz.family_auth.repository.AppUserRepository;
+import com.isofttz.family_auth.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

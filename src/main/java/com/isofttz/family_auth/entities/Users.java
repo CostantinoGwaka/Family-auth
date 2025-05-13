@@ -1,4 +1,4 @@
-package com.isofttz.family.auth.family_auth.entities;
+package com.isofttz.family_auth.entities;
 
 
 import jakarta.persistence.*;

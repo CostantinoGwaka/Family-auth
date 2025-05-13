@@ -1,7 +1,7 @@
-package com.isofttz.family.auth.family_auth.security;
+package com.isofttz.family_auth.security;
 
 
-import com.isofttz.family.auth.family_auth.model.ApiException;
+import com.isofttz.family_auth.model.ApiException;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;

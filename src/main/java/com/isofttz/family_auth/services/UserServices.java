@@ -1,7 +1,7 @@
-package com.isofttz.family.auth.family_auth.services;
+package com.isofttz.family_auth.services;
 
 
-import com.isofttz.family.auth.family_auth.entities.Users;
+import com.isofttz.family_auth.entities.Users;
 
 import java.util.List;
 import java.util.Optional;

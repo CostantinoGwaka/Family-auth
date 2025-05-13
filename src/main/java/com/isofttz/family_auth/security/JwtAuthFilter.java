@@ -1,6 +1,6 @@
-package com.isofttz.family.auth.family_auth.security;
+package com.isofttz.family_auth.security;
 
-import com.isofttz.family.auth.family_auth.services.CustomUserDetailsService;
+import com.isofttz.family_auth.services.CustomUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

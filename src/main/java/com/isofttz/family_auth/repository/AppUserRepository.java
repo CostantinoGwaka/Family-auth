@@ -1,6 +1,6 @@
-package com.isofttz.family.auth.family_auth.repository;
+package com.isofttz.family_auth.repository;
 
-import com.isofttz.family.auth.family_auth.entities.Users;
+import com.isofttz.family_auth.entities.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

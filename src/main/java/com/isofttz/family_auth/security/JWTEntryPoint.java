@@ -1,4 +1,4 @@
-package com.isofttz.family.auth.family_auth.security;
+package com.isofttz.family_auth.security;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

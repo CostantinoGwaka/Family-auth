@@ -11,3 +11,11 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    org.springframework.web: ERROR            # Logs for controller-level errors
+    org.springframework.boot: INFO            # General Spring Boot info level logging
+    org.springframework.dao: ERROR            # Logs database errors if using Spring Data
+    org.springframework.security: ERROR        # Logs authentication or security-related errors
+    reactor.core.publisher: DEBUG              # Logs reactive programming issues (if using reactive)
