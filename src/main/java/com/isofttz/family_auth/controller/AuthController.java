@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/family-auth/api/auth")
+@RequestMapping("/api/auth")
 public class AuthController {
 
     @Value("${app.jwt-expiration-milliseconds}")

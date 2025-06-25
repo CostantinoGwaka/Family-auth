@@ -38,7 +38,7 @@ public class SecurityConfig {
                 authorizeHttpRequests((authReq)->authReq
                         .requestMatchers(HttpMethod.GET)
                         .permitAll()
-                        .requestMatchers("/family-auth/api/auth/**")
+                        .requestMatchers("/api/auth/**")
                         .permitAll()
 //                        .requestMatchers("/api/bills/**").authenticated()
 //                        .requestMatchers("/api/budget/**").authenticated()
